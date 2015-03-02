@@ -1,0 +1,11 @@
+{
+  "name": "Pink",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Edymov/16302-Pink",
+  "authors": [
+    "Egor Dymov"
+  ],
+  "description": "Pink template for HTML Academy",
+  "license": "MIT",
+  "private": true
+}
