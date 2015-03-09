@@ -1,0 +1,39 @@
+.page-header  {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 20px 0;
+}
+.logo  {
+	float: left;
+	h1{
+		margin: 0;
+		font-weight: normal;
+	}
+	a{
+		font:32px 'GothamRoundedBook_21018';
+		text-transform: uppercase;
+	}
+}
+
+.menu-top  {
+	float: right;
+	.toggle-btn{
+		display: block;
+		font-size: 30px;
+		width: 50px;
+	}
+}
+nav  {
+	display:none;
+	ul  {
+		list-style: none;
+	}
+	li  {
+		text-align: center;
+	}
+	a  {
+		color: white;
+		font: 18px bold;
+		padding: 25px 0 22px;
+		display: inline-block;
+	}
+}

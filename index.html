@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Pink</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
@@ -13,7 +14,7 @@
 
 	<!-- begin  page-header -->
 	<header class="page-header">
-		<div class="container">
+		<div class="container clearfix">
 			<div class="logo">
 				<h1><a href="/">Pink</a></h1>
 			</div>
@@ -42,9 +43,9 @@
 			<div class="app-info">
 				<button class="download-btn">Скачать приложение</button>
 				<div class="os-icons">
-					<a href="#777" class="os-icon os-icon--apple"></a>
-					<a href="#777" class="os-icon os-icon--android"></a>
-					<a href="#777" class="os-icon os-icon--winphone"></a>
+					<a href="#777" class="os-icon os-icon--apple">apple</a>
+					<a href="#777" class="os-icon os-icon--android">android</a>
+					<a href="#777" class="os-icon os-icon--winphone">winphone</a>
 				</div>
 				<p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
 			</div>
@@ -56,26 +57,39 @@
 
 	<!-- begin   information-->
 	<div class="information">
-		<div class="container">
-			<div class="information__headings">
+
+		<div class="information__headings">
+			<div class="container">
 				<h2>Устали от серости мегаполиса?</h2>
 				<h2>Нам есть, что вам предложить</h2>
 			</div>
-			<div class="information__content">
+		</div>
+
+		<div class="information__content">
+
+			<div class="container">
 				<article>
 					<h3>Поднимает настроение</h3>
-					<p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+					<p>
+						Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+					</p>
 				</article>
 				<article>
 					<h3>Меняет мир вокруг</h3>
-					<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+					<p>
+						Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+					</p>
 				</article>
 				<article>
 					<h3>Заводит новых друзей</h3>
-					<p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+					<p>
+						Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+					</p>
 				</article>
 			</div>
+
 		</div>
+
 	</div>
 	<!-- end  information-->
 	
@@ -84,28 +98,28 @@
 	<div class="review">
 
 		<div class="container">
-			<div class="slider">
-				<article class="slider__item">
-					<h3>Николай Петров</h3>
-					<p>
-						«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-					</p>
-				</article>
-				<article class="slider__item">
-					<h3>Николай Петров</h3>
-					<p>
-						«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-					</p>
-				</article>
-				<article class="slider__item">
-					<h3>Николай Петров</h3>
-					<p>
-						«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-					</p>
-				</article>
-				<div class="slider__navigation"> 
-					<i class="active"></i>
-					<i></i>
+			<div class="slider clearfix">
+				<div class="slider__container">
+					<article class="slider__item slider__item--active">
+						<h3>Николай Петров</h3>
+						<p>
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+						</p>
+					</article>
+					<article class="slider__item">
+						<h3>Николай Петров</h3>
+						<p>
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+						</p>
+					</article>
+					<article class="slider__item">
+						<h3>Николай Петров</h3>
+						<p>
+							«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+						</p>
+					</article>
+				</div>
+				<div class="slider__navigation"> <i class="active"></i> <i></i>
 					<i></i>
 				</div>
 			</div>
@@ -116,64 +130,66 @@
 	<!-- begin price  -->
 	<div class="price">
 		<div class="container">
-			<div class="slider">
-				<table class="slider__item">
-					<tr>
-						<td>
-							<h3>База</h3>
-							<p>3,99 USD</p>
-						</td>
-					</tr>
-					<tr>
-						<td>Розовый фильтр</td>
-
-					</tr>
-					<tr>
-						<td>Смайлики</td>
-
-					</tr>
-					<tr>
-						<td>Комментарии</td>
-
-					</tr>
-				</table>
-				<table class="slider__item">
-					<tr>
-						<td class="hit">
-							<h3>Стандарт</h3>
-							<p>3,99 USD</p>
-						</td>
-					</tr>
-					<tr>
-						<td>Розовый фильтр</td>
-					</tr>
-					<tr>
-						<td>Смайлики</td>
-					</tr>
-					<tr>
-						<td>Комментарии</td>
-					</tr>
-				</table>
-				<table class="slider__item">
-					<tr>
-						<td colspan="2">
-							<h3>Анлим</h3>
-							<p>9,99 USD</p>
-						</td>
-					</tr>
-					<tr>
-						<td>Розовый фильтр</td>
-					</tr>
-					<tr>
-						<td>Смайлики</td>
-					</tr>
-					<tr>
-						<td>Комментарии</td>
-					</tr>
-				</table>
+			<div class="slider clearfix">
+				<div class="slider__container">
+					<table class="slider__item price__table">
+						<tr>
+							<td class="table__head">
+								<h3>База</h3>
+								<p>3,99 USD</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__filter">Розовый фильтр</td>
+					
+						</tr>
+						<tr>
+							<td>Смайлики</td>
+					
+						</tr>
+						<tr>
+							<td>Комментарии</td>
+					
+						</tr>
+					</table>
+					<table class="slider__item slider__item--active price__table">
+						<tr>
+							<td class="table__head hit">
+								<h3>Стандарт</h3>
+								<p>3,99 USD</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__filter">Розовый фильтр</td>
+						</tr>
+						<tr>
+							<td>Смайлики</td>
+						</tr>
+						<tr>
+							<td>Комментарии</td>
+						</tr>
+					</table>
+					<table class="slider__item price__table">
+						<tr>
+							<td colspan="2" class="table__head">
+								<h3>Анлим</h3>
+								<p>9,99 USD</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="table__filter">Розовый фильтр</td>
+						</tr>
+						<tr>
+							<td>Смайлики</td>
+						</tr>
+						<tr>
+							<td>Комментарии</td>
+						</tr>
+					</table>
+				</div>
 				<div class="slider__navigation">
-					<i class="active"></i>
 					<i></i>
+					<i class="active"></i>
 					<i></i>
 				</div>
 			</div>
@@ -186,17 +202,25 @@
 	<div class="contacts">
 		<div class="container">
 		
-			<h2>Остались вопросы?</h2>
-			<h2>Свяжитесь с нами!</h2>
+			<div class="contacts__headings">
+				<h2>Остались вопросы?</h2>
+				<h2>Свяжитесь с нами!</h2>
+			</div>
 	    	<h4>Звоните:</h4>
-			<a href="#777">8 (800) 1000 900</a>
+			<a href="tel:+88001000900">8 (800) 1000 900</a>
 			<h4>Пишите:</h4>
-			<a href="#777">hello@pinkapp.ru</a>
+			<a href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a>
 			<h4>Приезжайте в гости:</h4>
-			<p>Санкт-Петербург,Невский проспект, д. 20</p>
-			<div class="city-map-container"></div>
+			<p>Санкт-Петербург,</p>
+			<p>Невский проспект, д. 20</p>
+			
 			
 		</div>
+
+		<div class="city-map-container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.7462900539058!2d30.321096999999995!3d59.936352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDIwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1425678673945" width="320" height="220" frameborder="0" style="border:0"></iframe>
+		</div>
+
 	</div>
 	<!-- end contacts -->
 	

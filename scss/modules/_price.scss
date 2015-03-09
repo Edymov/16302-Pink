@@ -1,0 +1,32 @@
+.price{
+	background: #f2f2f2;
+	padding: 60px 0 100px;
+	.container{
+		padding: 0;
+	}
+}
+.price__table{
+	margin-right: 2px;
+	width: 280px;
+	text-transform: uppercase;
+
+}
+table td{
+	text-align: center;
+	background: #fff;
+	padding: 25px 0;
+	border-top: 2px solid #e5e5e5;
+	border-bottom: 2px solid #e5e5e5;
+}
+.table__head{
+	background: #283645;
+	color: #fff;
+	border: none;
+	p{
+		font-weight: 300;
+		font-size: 24px;
+	}
+}
+.table__filter{
+	border-top: none;
+}

@@ -1,0 +1,35 @@
+.contacts{
+	text-align: center;
+	padding: 45px 0 0 0;
+	&__headings{
+		margin-bottom: 45px;
+	}
+	h2{
+
+	}
+	a,p  {
+		color: #d22856;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	.city-map-container{
+		position: relative;
+		width: 320px;
+		margin: auto;
+		margin-top: 45px;
+	}
+	.city-map-container:before  {
+		
+			content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 35px 160px 0 160px;
+			border-color: #fff transparent transparent transparent;
+			position: absolute;
+			top: 0;
+			left:0;
+
+	}
+	
+}

@@ -1,0 +1,40 @@
+body{
+	font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #283645;
+}
+/* подключение шрифта */
+
+@font-face {
+	font-family: 'GothamRoundedBook_21018';
+	src: url('../../fonts/GothamRoundedBook_21018.eot');
+	src: local('☺'), url('../../fonts/GothamRoundedBook_21018.woff') format('woff'), url('../../fonts/GothamRoundedBook_21018.ttf') format('truetype'), url('../../fonts/GothamRoundedBook_21018.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Заголовки */
+h1,h2,h5,h6{
+	font-weight: normal;
+}
+h2{
+	font-weight: 300;
+	font-size: 24px;
+}
+h3{
+	font-size: 18px/24px;
+}
+h4{
+	font-size: 18px;
+	margin: 10px 0;
+}
+/* Абзацы */
+
+p{
+	font-size: 14px/30px;
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: white;
+}

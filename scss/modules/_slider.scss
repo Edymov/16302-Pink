@@ -1,0 +1,45 @@
+.slider  {
+	overflow: hidden;
+	position: relative;
+	padding-bottom:40px;
+}
+/* .slider__item{
+	display: none;
+}
+.slider__item--active{
+	display: none;
+} */
+.slider__container {
+	width: 300%;
+	
+}
+.slider__item  {
+	float: left;
+	width: 320px;
+}
+.price .slider__item{
+	transform: translate(-260px, 0);
+}
+.slider__navigation  {
+	font-size: 0;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 0;
+	i  {
+		border-radius: 50%;
+		background: #bec2c7;
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		content: "";
+		border: 3px solid #fff;
+		margin-right: 15px;
+		&.active{
+			background: #fff;
+			border: 3px solid #283645;
+		}
+	}
+
+}
