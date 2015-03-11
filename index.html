@@ -2,12 +2,12 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Pink</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+	<meta charset="utf-8">
+	<title>HTML Academy: Pink</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&amp;subset=latin,cyrillic" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 			</div>
 			<div class="menu-top">
 				<a href="#777" class="toggle-btn">&equiv;</a>
-				<nav>
+				<nav class="menu-top__navigation">
 					<ul>
 						<li><a href="#777">Информация</a></li>
 						<li><a href="#777">Возможности</a></li>
@@ -92,7 +92,7 @@
 
 	</div>
 	<!-- end  information-->
-	
+
 
 	<!-- begin review  -->
 	<div class="review">
@@ -119,14 +119,16 @@
 						</p>
 					</article>
 				</div>
-				<div class="slider__navigation"> <i class="active"></i> <i></i>
-					<i></i>
+				<div class="slider__navigation">
+					<i class="slider__navigation-item slider__navigation-item--active"></i>
+					<i class="slider__navigation-item"></i>
+					<i class="slider__navigation-item"></i>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- end review -->
-	
+
 	<!-- begin price  -->
 	<div class="price">
 		<div class="container">
@@ -141,15 +143,15 @@
 						</tr>
 						<tr>
 							<td class="table__filter">Розовый фильтр</td>
-					
+
 						</tr>
 						<tr>
 							<td>Смайлики</td>
-					
+
 						</tr>
 						<tr>
 							<td>Комментарии</td>
-					
+
 						</tr>
 					</table>
 					<table class="slider__item slider__item--active price__table">
@@ -188,9 +190,9 @@
 					</table>
 				</div>
 				<div class="slider__navigation">
-					<i></i>
-					<i class="active"></i>
-					<i></i>
+					<i class="slider__navigation-item"></i>
+					<i class="slider__navigation-item slider__navigation-item--active"></i>
+					<i class="slider__navigation-item"></i>
 				</div>
 			</div>
 		</div>
@@ -200,21 +202,22 @@
 
 	<!-- begin contacts  -->
 	<div class="contacts">
+
 		<div class="container">
-		
+
 			<div class="contacts__headings">
 				<h2>Остались вопросы?</h2>
 				<h2>Свяжитесь с нами!</h2>
 			</div>
-	    	<h4>Звоните:</h4>
+				<h4>Звоните:</h4>
 			<a href="tel:+88001000900">8 (800) 1000 900</a>
 			<h4>Пишите:</h4>
 			<a href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a>
 			<h4>Приезжайте в гости:</h4>
 			<p>Санкт-Петербург,</p>
 			<p>Невский проспект, д. 20</p>
-			
-			
+
+
 		</div>
 
 		<div class="city-map-container">
@@ -223,7 +226,7 @@
 
 	</div>
 	<!-- end contacts -->
-	
+
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->

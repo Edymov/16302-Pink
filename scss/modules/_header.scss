@@ -9,7 +9,6 @@
 		font-weight: normal;
 	}
 	a{
-		font:32px 'GothamRoundedBook_21018';
 		text-transform: uppercase;
 	}
 }
@@ -22,7 +21,7 @@
 		width: 50px;
 	}
 }
-nav  {
+.menu-top__navigation  {
 	display:none;
 	ul  {
 		list-style: none;
@@ -32,7 +31,7 @@ nav  {
 	}
 	a  {
 		color: white;
-		font: 18px bold;
+		font: $font-norm bold;
 		padding: 25px 0 22px;
 		display: inline-block;
 	}

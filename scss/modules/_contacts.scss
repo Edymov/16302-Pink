@@ -9,7 +9,7 @@
 	}
 	a,p  {
 		color: #d22856;
-		font-size: 24px;
+		font-size: $font-big;
 		font-weight: 300;
 	}
 	.city-map-container{
@@ -19,7 +19,7 @@
 		margin-top: 45px;
 	}
 	.city-map-container:before  {
-		
+
 			content: "";
 			width: 0;
 			height: 0;
@@ -31,5 +31,5 @@
 			left:0;
 
 	}
-	
+
 }
