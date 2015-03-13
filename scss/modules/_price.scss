@@ -4,7 +4,11 @@
 	.container{
 		padding: 0;
 	}
+	&__headings{
+		display: none;
+	}
 }
+
 .price__table  {
 	margin-right: 2px;
 	width: 280px;
@@ -37,6 +41,58 @@
 	}
 
 }
+
 .table__filter  {
 	border-top: none;
+}
+
+@media screen and (min-width:$medium-screen){
+	.price{
+		&__headings{
+			display: table;
+		}
+		.slider__navigation{
+			display: none;
+		}
+	}
+	.price__headings{
+		th{
+			height: 95px;
+			content: "";
+		}
+		td{
+			font-size: $font-small;
+		}
+	}
+
+	.price__table  {
+
+		width: 150px;
+
+		td  {
+			font-size: 0;
+			padding: 20px 0;
+		}
+		.table__head  {
+
+		}
+
+	}
+	.table__head  {
+		h3{
+			font-size: 16px;
+		}
+		p  {
+
+			font-weight: 300;
+			font-size: $font-norm;
+
+		}
+
+	}
+
+	.table__filter  {
+		border-top: none;
+	}
+
 }

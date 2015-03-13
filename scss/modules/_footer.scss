@@ -1,0 +1,6 @@
+.page__footer{
+	display: none;
+	@media screen and (min-width:$medium-screen) {
+		display: block;
+	}
+}

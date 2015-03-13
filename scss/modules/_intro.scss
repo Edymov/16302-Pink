@@ -1,19 +1,45 @@
 .intro  {
-	padding: 25px 0 35px;
+	padding: 100px 0 35px;
 	color: #fff;
 	text-align: center;
-	background: #1d2631; 
+	background: #1d2631 url(../img/intro_bg_small.jpg) no-repeat;
+	background-size: 100% 460px;
+	&:after{
+		position: absolute;
+		top: 175px;
+		left: 0;
+		content: "";
+		width: 255px;
+		height: 285px;
+		background: url("../img/iphone_hand_small.png") no-repeat;
+	}
+	@media screen and (min-width:$medium-screen) {
+		background: #1d2631 url(../img/intro_bg_medium.jpg) no-repeat;
+		background-size: 100%;
+		h2{
+			font-size: $font-huge;
+			width: 180px;
+			text-align: center;
+			margin-left: (60px/$medium-screen) * 100%;
+		}
+	}
 }
+
 .os-icons{
 	margin: 30px 0;
 	content: "";
 }
+
 .app-info{
-	margin-top: 250px;
+	margin-top: 350px;
+	@media screen and (min-width:$medium-screen) {
+		margin-top: 40px;
+		width: 48.38%;
+	}
 }
 
 .download-btn  {
-	width: 100%;
+	width: 93.3%;
 	border-radius: 30px;
 	padding: 10px 0;
 	text-align: center;

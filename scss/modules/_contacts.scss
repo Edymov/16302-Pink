@@ -4,6 +4,9 @@
 	&__headings{
 		margin-bottom: 45px;
 	}
+	article{
+
+	}
 	h2{
 
 	}
@@ -12,12 +15,14 @@
 		font-size: $font-big;
 		font-weight: 300;
 	}
+
 	.city-map-container{
 		position: relative;
 		width: 320px;
 		margin: auto;
 		margin-top: 45px;
 	}
+
 	.city-map-container:before  {
 
 			content: "";
@@ -30,6 +35,18 @@
 			top: 0;
 			left:0;
 
+	}
+	@media screen and (min-width:$medium-screen) {
+		h2{
+			font-size: 40px;
+		}
+		article{
+			float: left;
+			width: 50%;
+			&:last-child{
+				width: 100%;
+			}
+		}
 	}
 
 }

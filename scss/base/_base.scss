@@ -7,22 +7,28 @@ body{
 h1,h2,h5,h6{
 	font-weight: normal;
 }
+
 h2{
 	font-weight: 300;
 	font-size: $font-big;
 }
+
 h3{
-	font-size: $font-norm/24px;
+	font-size: $font-norm;
+	line-height: 24px;
 	margin: 0;
 }
+
 h4{
 	font-size: $font-norm;
 	margin: 10px 0;
 }
+
 /* Абзацы */
 
 p{
-	font-size: $font-small/30px;
+	font-size: $font-small;
+	line-height: 30px;
 	margin: 0;
 }
 

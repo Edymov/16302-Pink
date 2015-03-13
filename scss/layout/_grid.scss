@@ -2,4 +2,7 @@
 	width: $small-screen;
 	padding: 0 20px;
 	margin: auto;
+	@media screen and(min-width: $medium-screen) {
+		width: $medium-screen;
+	}
 }

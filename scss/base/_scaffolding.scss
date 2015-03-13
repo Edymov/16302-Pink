@@ -9,9 +9,11 @@
 button{
 	outline: 0;
 }
+
 *, *:before, *:after{
 	box-sizing: border-box;
 }
+
 .clearfix, .clearfix:before, clearfix:after {
 	content: "";
 	display: table;

@@ -3,22 +3,27 @@
 	position: relative;
 	padding-bottom:40px;
 }
+
 /* .slider__item{
 	display: none;
 }
 .slider__item--active{
 	display: none;
 } */
+
 .slider__container {
 	width: 300%;
 }
+
 .slider__item  {
 	float: left;
-	width: 320px;
+	width: $small-screen;
 }
+
 .price .slider__item{
 	transform: translate(-260px, 0);
 }
+
 .slider__navigation  {
 	font-size: 0;
 	text-align: center;
@@ -41,4 +46,13 @@
 		}
 	}
 
+}
+@media screen and (min-width:$medium-screen){
+	.slider__item  {
+		float: left;
+		width: $medium-screen;
+	}
+	.price .slider__item{
+	transform: none;
+	}
 }
