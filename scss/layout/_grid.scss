@@ -1,8 +1,16 @@
 .container{
-	width: $small-screen;
+	min-width: $small-screen;
+	max-width: $medium-screen;;
 	padding: 0 20px;
 	margin: auto;
+
 	@media screen and(min-width: $medium-screen) {
-		width: $medium-screen;
+		min-width: $medium-screen;
+		max-width: $desktop-screen;
+	}
+	@media screen and(min-width: 1200px) {
+		min-width: $desktop-screen;
+		max-width: $desktop-screen;
+		padding: 0 10px;
 	}
 }

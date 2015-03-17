@@ -1,6 +1,7 @@
 .information{
 	text-align: center;
-	background: $l-grey;
+	background: $l-grey url("../img/iphone-screen-3-3@1x.png") no-repeat bottom left;
+
 	&__headings{
 		padding: 45px 0 40px;
 		background: #fff;
@@ -22,6 +23,15 @@
 }
 @media screen and (min-width:$medium-screen){
 	.information{
+		h2{
+			margin-bottom: 15px;
+			font-size: $font-huge;
+
+		}
+		h2:last-child{
+			width: 50%;
+			margin: auto;
+		}
 		&__content{
 		padding: 75px 0 0 0;
 

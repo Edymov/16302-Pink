@@ -5,24 +5,26 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	@media screen and (min-width:$medium-screen) {
 
-	}
 }
 
 .logo  {
 	float: left;
 	position: relative;
-	z-index: 5;
+	z-index: 7;
 	h1{
 		margin: 0;
-
 
 	}
 	&__link{
 		text-transform: uppercase;
 		font-size: 32px;
 		font-weight: normal;
+		display: inline-block;
+		height: 25px;
+		width: 75px;
+		background: url(../img/logo-1.svg);
+
 	}
 }
 
@@ -32,17 +34,18 @@
 	.toggle-btn{
 		display: block;
 		font-size: 30px;
-		// width: 50px;
+		width: 50px;
 		height: 25px;
 		position: relative;
-		z-index: 5;
+		z-index: 7;
+		font-size: 0;
 	}
 }
 
 .menu-top__navigation  {
 	display:none;
 	position: absolute;
-	z-index: 2;
+	z-index: 6;
 	width: 100%;
 	left: 0;
 	top: 0;
@@ -57,7 +60,7 @@
 		border-top: 1px black solid;
 		border-bottom: 1px rgba(255, 255, 255, 0.15) solid;
 	}
-	.empty-item{
+	.navigation__empty-item{
 		content: "";
 		padding: 40px;
 	}
@@ -69,4 +72,23 @@
 		padding: 25px 0 22px;
 		font-weight: bold;
 
+}
+
+@media screen and (min-width:$medium-screen) {
+	.page-header  {
+		background: rgba(0, 0, 0, 0.3);
+		padding: 25px 0 40px;
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+	}
+.menu-top__navigation  {
+
+	.navigation__empty-item  {
+		content: "";
+		padding: 45px 0 70px;
+		}
+	}
 }

@@ -48,6 +48,9 @@
 
 }
 @media screen and (min-width:$medium-screen){
+	.slider  {
+		padding-bottom:75px;
+	}
 	.slider__item  {
 		float: left;
 		width: $medium-screen;

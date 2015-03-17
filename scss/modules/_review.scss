@@ -3,8 +3,14 @@
 	line-height: 30px;
 	text-align: center;
 
-	h3  {
-
+	.slider__item{
+			display: flex;
+			flex-direction: column;
+	}
+	&__author  {
+		order: 0;
+	};
+	&__author-name  {
 		margin-bottom: 30px;
 	};
 	&__promo-block{
@@ -17,23 +23,62 @@
 @media screen and (min-width:$medium-screen){
 	.review  {
 
+		&__author  {
+			order: 1;
+		};
+		&__author-name  {
+			font-size: 20px;
+			margin: 45px 0 15px;
+		};
 		&__promo-block{
 			display: block;
 		}
 		&__author-info{
-				display: block;
+			display: block;
 		}
 	}
 	.review__promo-block{
-
+		text-align: left;
+		margin-bottom: 80px;
+		.promo-block__img-wrapper{
+			background: url("../img/timer-2.svg") no-repeat;
+			width: 260px;
+			height: 300px;
+			position: relative;
+		}
+		.promo-block__img-inner{
+			display: block;
+			color: $pink;
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			font-size: 104.6px;
+			font-weight: bold;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 175px;
+			border: 10px solid $pink;
+			position: absolute;
+			left: 34px;
+			top: 75px;
+		}
 
 		div,article {
 			width: 50%;
 			float: left;
 		}
+		article{
+			padding-top: 45px;
+		}
 
+		h2{
+			font-weight: bold;
+			font-size: $font-bigger;
+			width: 160px;
+
+		}
 		a {
-			color: pink;
+			color: $pink;
 			text-decoration: underline;
 		}
 

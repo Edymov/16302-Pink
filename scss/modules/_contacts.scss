@@ -11,16 +11,17 @@
 
 	}
 	a,p  {
-		color: #d22856;
+		color: $pink;
 		font-size: $font-big;
 		font-weight: 300;
 	}
 
 	.city-map-container{
 		position: relative;
-		width: 320px;
-		margin: auto;
 		margin-top: 45px;
+		iframe{
+			width: 100%;
+		}
 	}
 
 	.city-map-container:before  {

@@ -2,8 +2,9 @@
 	padding: 100px 0 35px;
 	color: #fff;
 	text-align: center;
-	background: #1d2631 url(../img/intro_bg_small.jpg) no-repeat;
-	background-size: 100% 460px;
+	background: #1d2631 url(../img/background-1@1x.jpg) no-repeat;
+	background-size: cover;
+	z-index: 4;
 	&:after{
 		position: absolute;
 		top: 175px;
@@ -12,31 +13,64 @@
 		width: 255px;
 		height: 285px;
 		background: url("../img/iphone_hand_small.png") no-repeat;
+		z-index: 3;
 	}
 	@media screen and (min-width:$medium-screen) {
-		background: #1d2631 url(../img/intro_bg_medium.jpg) no-repeat;
+		background: #1d2631 url(../img/intro_bg_med.jpg) no-repeat;
 		background-size: 100%;
+		min-height: 500px;
+		padding: 183px 0 134px;
+
 		h2{
 			font-size: $font-huge;
 			width: 180px;
 			text-align: center;
 			margin-left: (60px/$medium-screen) * 100%;
+			position: relative;
+			z-index: 5;
+		}
+		&:after{
+			position: absolute;
+			top: 182px;
+			left: 162px;
+			content: "";
+			width: 472px;
+			height: 545px;
+			background: url("../img/iphone_hand.png") no-repeat;
 		}
 	}
 }
 
-.os-icons{
-	margin: 30px 0;
-	content: "";
-}
-
 .app-info{
 	margin-top: 350px;
+	background: #1d2631;
 	@media screen and (min-width:$medium-screen) {
-		margin-top: 40px;
-		width: 48.38%;
+		margin: 15px 0 0 19px;
+		width: 300px;
+		position: relative;
+		z-index: 5;
+		text-align: left;
+
 	}
 }
+
+.os-icons{
+	margin: 25px 0;
+	text-align: center;
+	@media screen and (min-width:$medium-screen) {
+		margin: 45px 0 40px;
+		width: 300px;
+		z-index: 5;
+
+	}
+}
+.os-icon{
+	margin-right: 35px;
+	display: inline-block;
+
+}
+
+
 
 .download-btn  {
 	width: 93.3%;
@@ -44,6 +78,12 @@
 	padding: 10px 0;
 	text-align: center;
 	background: none;
-	border: 2px solid #fff;
-
+	border: 3px solid #fff;
+	font-weight: bold;
+	font-size: $font-norm;
+	&:hover,
+	:focus {
+		background: #fff;
+		color: $pink;
+	}
 }
