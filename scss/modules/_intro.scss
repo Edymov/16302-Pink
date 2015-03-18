@@ -1,55 +1,64 @@
 .intro  {
-	padding: 100px 0 35px;
+	padding: 100px 0 350px;
 	color: #fff;
 	text-align: center;
-	background: #1d2631 url(../img/background-1@1x.jpg) no-repeat;
-	background-size: cover;
+	background: url(../img/iphone-hand-1.png) no-repeat 0 198px,url(../img/background-1@1x.jpg) no-repeat 50% #1d2631;
+	background-size: 285px 286px, cover;
 	z-index: 4;
-	&:after{
-		position: absolute;
-		top: 175px;
-		left: 0;
-		content: "";
-		width: 255px;
-		height: 285px;
-		background: url("../img/iphone_hand_small.png") no-repeat;
-		z-index: 3;
-	}
+	position: relative;
+	width: 100%;
+	left: 0;
+		@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+			background: url(../img/iphone-hand-1@2x.png) no-repeat 0 230px,url(../img/background-1@2x.jpg) no-repeat 50% #1d2631;
+			background-size: 285px 286px, cover;
+		}
+		/* Iphone 6 fix */
+		@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx), screen and (min-width: 375px), screen and (min-height: 667px){
+			background: url(../img/iphone-hand-1@2x.png) no-repeat 0 198px,url(../img/background-1@2x.jpg) no-repeat 50% #1d2631;
+			background-size: 285px 286px, cover;
+		}
+		@media screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx){
+			background: url(../img/iphone-hand-1@3x.png) no-repeat 0 198px,url(../img/background-1@3x.jpg) no-repeat 50% #1d2631;
+			background-size: 285px 286px, cover;
+		}
+
 	@media screen and (min-width:$medium-screen) {
-		background: #1d2631 url(../img/intro_bg_med.jpg) no-repeat;
-		background-size: 100%;
+		background: url(../img/iphone-hand-2@1x.png) no-repeat 65% bottom,url(../img/background-2@1x.jpg) no-repeat #1d2631;
 		min-height: 500px;
-		padding: 183px 0 134px;
+		padding: 200px 0 0;
+		background-size: 700px 545px, cover;
+
+			@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+				background: url(../img/iphone-hand-2@2x.png) no-repeat 65% bottom,url(../img/background-2@2x.jpg) no-repeat #1d2631;
+				background-size: 700px 545px, cover;
+			}
 
 		h2{
 			font-size: $font-huge;
 			width: 180px;
 			text-align: center;
-			margin-left: (60px/$medium-screen) * 100%;
+			margin-left: 60px;
 			position: relative;
 			z-index: 5;
 		}
-		&:after{
-			position: absolute;
-			top: 182px;
-			left: 162px;
-			content: "";
-			width: 472px;
-			height: 545px;
-			background: url("../img/iphone_hand.png") no-repeat;
-		}
+
 	}
 }
 
 .app-info{
 	margin-top: 350px;
+	padding: 30px 0 40px;
 	background: #1d2631;
+	width: 100%;
+	left: 0;
+	position: absolute;
 	@media screen and (min-width:$medium-screen) {
-		margin: 15px 0 0 19px;
+		margin: 0;
 		width: 300px;
 		position: relative;
 		z-index: 5;
 		text-align: left;
+		background: none;
 
 	}
 }
@@ -58,15 +67,18 @@
 	margin: 25px 0;
 	text-align: center;
 	@media screen and (min-width:$medium-screen) {
-		margin: 45px 0 40px;
-		width: 300px;
+		margin: 45px auto 40px;
+		width: 200px;
 		z-index: 5;
 
 	}
 }
 .os-icon{
-	margin-right: 35px;
+	margin-right: 29px;
 	display: inline-block;
+	&:last-child{
+		margin-right: 0;
+	}
 
 }
 
@@ -82,8 +94,11 @@
 	font-weight: bold;
 	font-size: $font-norm;
 	&:hover,
-	:focus {
+	&:focus {
 		background: #fff;
 		color: $pink;
+	}
+	&:active{
+		color: rgba($pink, .3);
 	}
 }

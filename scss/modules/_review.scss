@@ -76,6 +76,74 @@
 			font-size: $font-bigger;
 			width: 160px;
 
+
+		}
+		p{
+			margin: 35px 0;
+		}
+		a {
+			color: $pink;
+			text-decoration: underline;
+		}
+
+	}
+
+}
+@media screen and (min-width:1024px){
+.review  {
+
+		&__author  {
+			order: 1;
+		};
+		&__author-name  {
+			font-size: 20px;
+			margin: 45px 0 15px;
+		};
+		&__promo-block{
+			display: block;
+		}
+		&__author-info{
+			display: block;
+		}
+	}
+	.review__promo-block{
+		text-align: left;
+		margin-bottom: 80px;
+		.promo-block__img-wrapper{
+			background: url("../img/timer-2.svg") no-repeat;
+			width: 260px;
+			height: 300px;
+			position: relative;
+		}
+		.promo-block__img-inner{
+			display: block;
+			color: $pink;
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			font-size: 104.6px;
+			font-weight: bold;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 175px;
+			border: 10px solid $pink;
+			position: absolute;
+			left: 34px;
+			top: 75px;
+		}
+
+		div,article {
+			width: 50%;
+			float: left;
+		}
+		article{
+			padding-top: 45px;
+		}
+
+		h2{
+
+			width: auto;
+
 		}
 		a {
 			color: $pink;

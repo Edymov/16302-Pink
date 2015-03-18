@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-
+	z-index: 5;
 }
 
 .logo  {
@@ -14,7 +14,6 @@
 	z-index: 7;
 	h1{
 		margin: 0;
-
 	}
 	&__link{
 		text-transform: uppercase;
@@ -26,6 +25,7 @@
 		background: url(../img/logo-1.svg);
 
 	}
+
 }
 
 .menu-top  {
@@ -39,6 +39,7 @@
 		position: relative;
 		z-index: 7;
 		font-size: 0;
+
 	}
 }
 
@@ -71,7 +72,12 @@
 		font-size: $font-norm;
 		padding: 25px 0 22px;
 		font-weight: bold;
-
+	&:hover,&:focus {
+		color: $pink;
+	}
+	&:active {
+		color: rgba($pink, 0.3);
+	}
 }
 
 @media screen and (min-width:$medium-screen) {
@@ -84,11 +90,96 @@
 		width: 100%;
 
 	}
+	.logo  {
+
+		&__link{
+			background: url(../img/Pink-logo-2@1x.png) no-repeat;
+			width: 150px;
+			height: 40px;
+			@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+				background: url(../img/Pink-logo-2@2x.png) no-repeat;
+				background-size: 150px 40px;
+			}
+		}
+
+
+
+	}
+	.menu-top{
+		.toggle-btn{
+			top: 20px;
+		}
+	}
 .menu-top__navigation  {
 
 	.navigation__empty-item  {
 		content: "";
 		padding: 45px 0 70px;
+		}
+	}
+}
+@media screen and (min-width:1024px) {
+	.page-header  {
+		background: rgba(0, 0, 0, 0.3);
+		padding: 25px 0 40px;
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+	}
+	.logo  {
+
+		&__link{
+			background: url(../img/Pink-logo-3@1x.png) no-repeat;
+			width: 150px;
+			height: 40px;
+			@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+				background: url(../img/Pink-logo-3@2x.png) no-repeat;
+				background-size: 150px 40px;
+			}
+		}
+
+
+	}
+
+	.menu-top{
+		.toggle-btn{
+			display: none;
+		}
+	}
+
+	.menu-top__navigation  {
+		display:block;
+		position: static;
+		ul  {
+			list-style: none;
+		}
+		li  {
+			position: static;
+			text-align: left;
+			width: auto;
+			background: none;
+			border: none;
+			float:right;
+			margin-right: 60px;
+		}
+		.navigation__empty-item{
+			display: none;
+		}
+	.navigation__link  {
+			display: block;
+			color: white;
+			font-size: $font-norm;
+			padding: 10px;
+			font-weight: normal;
+			&:hover,&:focus {
+				border-bottom: 2px solid #fff;
+			}
+			&:active {
+				color: rgba(white, .3);
+				border-bottom: none;
+			}
 		}
 	}
 }

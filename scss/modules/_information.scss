@@ -1,7 +1,7 @@
 .information{
 	text-align: center;
-	background: $l-grey url("../img/iphone-screen-3-3@1x.png") no-repeat bottom left;
-
+	background: $l-grey url("../img/screen-1-3.png") no-repeat bottom center;
+	margin-top: 291px;
 	&__headings{
 		padding: 45px 0 40px;
 		background: #fff;
@@ -9,6 +9,7 @@
 	}
 	&__content{
 		padding: 50px 0 285px;
+		position: relative;
 
 	}
 	article{
@@ -20,9 +21,23 @@
 	h3{
 		margin-bottom: 25px;
 	}
+	figure{
+		display: none;
+	}
 }
 @media screen and (min-width:$medium-screen){
 	.information{
+		background: $l-grey url("../img/iphone-screen-2-3@1x.png") no-repeat 20px bottom;
+		margin-top: 0;
+		@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+				background: $l-grey url("../img/iphone-screen-2-3@2x.png") no-repeat 20px bottom;
+				background-size: 268px 481px;
+		}
+		&__headings{
+			padding: 60px 0 40px;
+			background: #fff;
+
+		}
 		h2{
 			margin-bottom: 15px;
 			font-size: $font-huge;
@@ -41,4 +56,45 @@
 		float: right;
 		width: 50%;
 	}
+}
+
+@media screen and (min-width:1024px){
+	.information{
+		background: $l-grey;
+		margin-top: 0;
+		h2{
+			margin-bottom: 15px;
+			font-size: $font-huge;
+
+		}
+		figure{
+			display: block;
+			position: relative;
+
+		}
+
+		article{
+			margin-bottom: 40px;
+			float: left;
+			width: 30%;
+		}
+		h2:last-child{
+			width: 50%;
+			margin: auto;
+		}
+		h3{
+			width: 180px;
+			font-size: $font-bigger;
+			margin: 50px auto 40px;
+		}
+		&__content{
+		padding: 15px 0 0 0;
+
+		}
+	}
+	.information__content--inner{
+		float: none;
+		width: 100%;
+	}
+
 }

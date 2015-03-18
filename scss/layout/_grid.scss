@@ -3,12 +3,13 @@
 	max-width: $medium-screen;;
 	padding: 0 20px;
 	margin: auto;
+	width: 100%;
 
 	@media screen and(min-width: $medium-screen) {
 		min-width: $medium-screen;
 		max-width: $desktop-screen;
 	}
-	@media screen and(min-width: 1200px) {
+	@media screen and(min-width: 1024px) {
 		min-width: $desktop-screen;
 		max-width: $desktop-screen;
 		padding: 0 10px;

@@ -33,16 +33,26 @@
 	bottom: 0;
 	&-item  {
 		border-radius: 50%;
-		background: #bec2c7;
+		background: rgba($d-grey, 0.3);
 		width: 12px;
 		height: 12px;
 		display: inline-block;
 		content: "";
 		border: 3px solid #fff;
 		margin-right: 15px;
+		cursor: pointer;
+		&:hover{
+			background: rgba($d-grey, 0.6);
+		}
+		&:active{
+			background: rgba($d-grey, 0.1);
+		}
 		&--active{
 			background: #fff;
 			border: 3px solid #283645;
+			&:hover{
+				background: #fff;;
+			}
 		}
 	}
 

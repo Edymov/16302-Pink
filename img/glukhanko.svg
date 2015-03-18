@@ -3,6 +3,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="25.988px" height="29.922px" viewBox="0 0 25.988 29.922" enable-background="new 0 0 25.988 29.922" xml:space="preserve">
+<style type="text/css" media="screen">
+	<![CDATA[
+		svg{
+			fill:#d22856;
+		}
+		svg:hover{
+			fill:#283645;
+		}
+	]]>
+</style>
 <path d="M0,0h25.988v29.922l-12.994-4.811L0,29.922V0z M20.154,17.895c-0.241,0-0.509-0.006-0.801-0.018
 	c-0.293-0.014-0.508-0.051-0.645-0.116c-0.225-0.103-0.391-0.26-0.5-0.469c-0.107-0.21-0.162-0.492-0.162-0.854
 	c0-0.394,0.018-1.211,0.055-2.457c0.035-1.244,0.054-2.319,0.054-3.226c0-0.858-0.146-1.556-0.439-2.088

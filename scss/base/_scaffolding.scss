@@ -5,7 +5,9 @@
 	-webkit-margin-end: 0;
 	-webkit-padding-start: 0;
 }
-
+figure{
+	margin: 0;
+}
 button{
 	outline: 0;
 }
@@ -19,3 +21,20 @@ button{
 	display: table;
 	clear: both;
 }
+.skew-gradient:before{
+		position: absolute;
+		left:0;
+		top:0;
+		width: 100%;
+		height: 30px;
+		content: "";
+	  background: linear-gradient(to right bottom, #fff 0%, #fff 50%, #f2f2f2 50%, #f2f2f2 100%);
+
+		@media screen and (min-width:$medium-screen) {
+			height: 60px;
+		}
+		@media screen and (min-width:1024px) {
+			height: 90px;
+		}
+}
+
