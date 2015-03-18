@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 				],
 			options: {
 					newline: true,
-					newlineMaximum: 2,
+					newlineMaximum: 4,
 					trailingspaces: true,
 					indentationGuess: true,
 					editorconfig: '.editorconfig',

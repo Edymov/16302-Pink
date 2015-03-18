@@ -69,3 +69,11 @@
 	transform: none;
 	}
 }
+@media screen and (min-width:1024px){
+
+	.slider__item  {
+		float: left;
+		width: $desktop-screen;
+	}
+
+}
