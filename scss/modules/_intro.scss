@@ -13,7 +13,7 @@
 			background-size: 285px 286px, cover;
 		}
 		/* Iphone 6 fix */
-		@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx), screen and (min-width: 375px), screen and (min-height: 667px){
+		@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait){
 			background: url(../img/iphone-hand-1@2x.png) no-repeat 0 198px,url(../img/background-1@2x.jpg) no-repeat 50% #1d2631;
 			background-size: 285px 286px, cover;
 		}
@@ -24,7 +24,7 @@
 
 	@media screen and (min-width:$medium-screen) {
 		background: url(../img/iphone-hand-2@1x.png) no-repeat 65% bottom,url(../img/background-2@1x.jpg) no-repeat #1d2631;
-		min-height: 500px;
+		min-height: 700px;
 		padding: 200px 0 0;
 		background-size: 700px 545px, cover;
 
@@ -43,6 +43,33 @@
 		}
 
 	}
+
+	@media (min-width:1024px){
+			background: url(../img/iphone-hand-3@1x.png) no-repeat 65% bottom,url(../img/background-1@1x.jpg) no-repeat 50% #1d2631;
+			background-size: 1050px 645px, cover;
+			min-height: 855px;
+			h2{
+				font-size: $font-huge+10;
+				width: 240px;
+				text-align: center;
+				margin: 20px 0 0 35px;
+				position: relative;
+				z-index: 5;
+			}
+			@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+				background: url(../img/iphone-hand-3@2x.png) no-repeat 65% bottom,url(../img/background-1@2x.jpg) no-repeat 50% #1d2631;
+				background-size: 1050px 645px, cover;
+			}
+	}
+	@media (min-width:1400px){
+			background: url(../img/iphone-hand-3@1x.png) no-repeat 65% bottom,url(../img/background-fullsize.jpg) no-repeat 50% #1d2631;
+			background-size: 1050px 645px, cover;
+			@media screen and (min-resolution: 196dpi), screen and (min-resolution: 2dppx){
+				background: url(../img/iphone-hand-3@2x.png) no-repeat 65% bottom,url(../img/background-fullsize.jpg) no-repeat 50% #1d2631;
+				background-size: 1050px 645px, cover;
+			}
+	}
+
 }
 
 .app-info{
@@ -59,6 +86,7 @@
 		z-index: 5;
 		text-align: left;
 		background: none;
+		padding: 60px 0 0;
 
 	}
 }
@@ -68,6 +96,11 @@
 	text-align: center;
 	@media screen and (min-width:$medium-screen) {
 		margin: 45px auto 40px;
+		width: 200px;
+		z-index: 5;
+	}
+	@media screen and (min-width: 1024px) {
+		margin: 60px auto;
 		width: 200px;
 		z-index: 5;
 
@@ -93,6 +126,7 @@
 	border: 3px solid #fff;
 	font-weight: bold;
 	font-size: $font-norm;
+	transition: 0.6s all ease-out;
 	&:hover,
 	&:focus {
 		background: #fff;
@@ -101,4 +135,10 @@
 	&:active{
 		color: rgba($pink, .3);
 	}
+	@media screen and (min-width:$medium-screen) {
+
+		font-size: $font-norm+3;
+
+	}
+
 }

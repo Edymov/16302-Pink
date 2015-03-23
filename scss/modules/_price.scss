@@ -76,11 +76,17 @@
 
 	.price{
 		color: #fff;
+		padding: 90px 0 70px;
 		&__headings{
 			display: table;
 		}
+		.slider{
+			margin: auto;
+			padding: 0;
+		}
 		.slider__navigation{
 			display: none;
+
 		}
 	}
 	.ico__ok:before, .ico__no:before{

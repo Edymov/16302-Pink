@@ -19,6 +19,12 @@
 	&__author-info{
 			display: none;
 	}
+	.slider{
+
+		&:before{
+			display: none;
+		}
+	}
 }
 @media screen and (min-width:$medium-screen){
 	.review  {
@@ -36,6 +42,11 @@
 		&__author-info{
 			display: block;
 		}
+
+		.slider__item p{
+			font-size: $font-norm;
+		}
+
 	}
 	.review__promo-block{
 		text-align: left;
@@ -91,6 +102,9 @@
 }
 @media screen and (min-width:1024px){
 .review  {
+	p{
+		font-size: $font-norm;
+	}
 
 		&__author  {
 			order: 1;
@@ -104,6 +118,26 @@
 		}
 		&__author-info{
 			display: block;
+		}
+
+		.slider{
+			padding-top: 120px;
+			&:before{
+				position: absolute;
+				top: 0;
+				left:50%;
+				content: "";
+				width: 78px;
+				height: 63px;
+				background: url(../img/quotes.svg) no-repeat;
+				z-index: 2;
+				transform: translate(-50%);
+
+			}
+		}
+		.slider__item p{
+			width: 680px;
+			margin: auto;
 		}
 	}
 	.review__promo-block{
@@ -145,6 +179,9 @@
 			width: auto;
 
 		}
+
+
+
 		a {
 			color: $pink;
 			text-decoration: underline;
