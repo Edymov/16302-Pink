@@ -38,7 +38,12 @@
 		position: relative;
 		z-index: 7;
 		font-size: 0;
+		background: url(../img/menu-burger.svg) no-repeat;
 
+	}
+	.toggle-btn--active{
+		background: url(../img/menu-cross.svg) no-repeat;
+		width: 25px;
 	}
 }
 
