@@ -39,21 +39,35 @@
 		z-index: 7;
 		font-size: 0;
 		background: url(../img/menu-burger.svg) no-repeat;
-
+		&:hover{
+			background: url(../img/menu-burger--hover.svg) no-repeat;
+		}
+		&:active{
+			opacity: 0.3;
+		}
 	}
 	.toggle-btn--active{
 		background: url(../img/menu-cross.svg) no-repeat;
 		width: 25px;
+		&:hover{
+			background: url(../img/menu-cross--hover.svg) no-repeat;
+		}
+		&:active{
+			opacity: 0.3;
+		}
 	}
+
 }
 
 .menu-top__navigation  {
-	display:none;
+	max-height:0;
+	overflow: hidden;
 	position: absolute;
 	z-index: 6;
 	width: 100%;
 	left: 0;
 	top: 0;
+	transition: .5s ease-in-out max-height, overflow;
 	ul  {
 		list-style: none;
 	}
@@ -70,6 +84,13 @@
 		padding: 40px;
 	}
 }
+
+.toggle-btn--active + .menu-top__navigation{
+	display: block;
+	overflow: visible;
+	max-height: 300px;
+}
+
 .navigation__link  {
 		display: block;
 		color: white;

@@ -1,11 +1,10 @@
-$("document").ready(function() {
-	$(".toggle-btn").click(function() {
-			if($(this).hasClass("toggle-btn--active")){
-				$(this).removeClass("toggle-btn--active")
-			}else{
-				$(this).addClass('toggle-btn--active');
-			}
-
-			$(".menu-top__navigation").slideToggle(300);
+(function(){
+	document.querySelector(".toggle-btn").addEventListener("click", function(){
+		if(this.classList.contains('toggle-btn--active')){
+			this.classList.remove("toggle-btn--active")
+		}else{
+			this.classList.add("toggle-btn--active")
+		}
 	});
-});
+})();
+

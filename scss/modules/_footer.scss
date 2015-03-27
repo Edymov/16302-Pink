@@ -57,9 +57,22 @@
 		}
 		.ico-gluhanko{
 			background: url(../img/glukhanko.svg) no-repeat;
+			&:hover{
+				background: url(../img/glukhanko--hover.svg) no-repeat;
+			}
+			&:active{
+				opacity: 0.3;
+			}
+
 		}
 		.ico-htmlacademy{
 			background: url(../img/htmlacademy.svg) no-repeat;
+			&:hover{
+				background: url(../img/htmlacademy--hover.svg) no-repeat;
+			}
+			&:active{
+				opacity: 0.3;
+			}
 		}
 	}
 
