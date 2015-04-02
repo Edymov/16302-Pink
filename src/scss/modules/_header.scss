@@ -87,8 +87,7 @@
 
 .toggle-btn--active + .menu-top__navigation{
 	display: block;
-	overflow: visible;
-	max-height: 300px;
+	max-height: 1000px;
 }
 
 .navigation__link  {
@@ -177,6 +176,7 @@
 	.menu-top__navigation  {
 		display:block;
 		position: static;
+		max-height:100%;
 		ul  {
 			list-style: none;
 		}

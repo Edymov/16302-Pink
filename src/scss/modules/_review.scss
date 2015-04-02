@@ -51,6 +51,10 @@
 	.review__promo-block{
 		text-align: left;
 		margin-bottom: 80px;
+		.promo-block__img{
+			width: 50%;
+			float: left;
+		}
 		.promo-block__img-wrapper{
 			background: url("../img/timer-2.svg") no-repeat;
 			width: 260px;
@@ -74,11 +78,9 @@
 			top: 75px;
 		}
 
-		div,article {
+		article {
 			width: 50%;
 			float: left;
-		}
-		article{
 			padding-top: 45px;
 		}
 
@@ -86,8 +88,6 @@
 			font-weight: bold;
 			font-size: $font-bigger;
 			width: 160px;
-
-
 		}
 		p{
 			margin: 35px 0;
@@ -102,6 +102,7 @@
 }
 @media screen and (min-width:1024px){
 .review  {
+	padding: 0;
 	p{
 		font-size: $font-norm;
 	}
@@ -142,9 +143,11 @@
 	}
 	.review__promo-block{
 		text-align: left;
-		margin-bottom: 80px;
+		background: $l-grey;
+		padding: 30px 0 65px;
+		margin: 0;
 		.promo-block__img-wrapper{
-			background: url("../img/timer-2.svg") no-repeat;
+			background: url("../img/timer-3.svg") no-repeat;
 			width: 260px;
 			height: 300px;
 			position: relative;
@@ -162,13 +165,8 @@
 			line-height: 175px;
 			border: 10px solid $pink;
 			position: absolute;
-			left: 34px;
+			left: 30px;
 			top: 75px;
-		}
-
-		div,article {
-			width: 50%;
-			float: left;
 		}
 		article{
 			padding-top: 45px;
