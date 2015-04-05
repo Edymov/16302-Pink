@@ -28,13 +28,13 @@
 
 	}
 	article{
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 	}
 	h2{
 		margin-bottom: 35px;
 	}
 	h3{
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 	}
 	figure{
 		display: none;
@@ -62,17 +62,19 @@
 		&__headings{
 			padding: 60px 0 40px;
 			background: #fff;
-
-		}
-		h2{
+			h2{
 			margin-bottom: 15px;
 			font-size: $font-huge;
+			text-align: center;
+
+			}
+			h2:last-child{
+				width: 50%;
+				margin: auto;
+			}
 
 		}
-		h2:last-child{
-			width: 50%;
-			margin: auto;
-		}
+
 		&__content{
 		padding: 50px 0 0 0;
 
@@ -104,7 +106,7 @@
 		}
 
 		article{
-			margin-bottom: 40px;
+			margin-bottom: 35px;
 			float: left;
 			width: 30%;
 		}

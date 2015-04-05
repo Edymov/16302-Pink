@@ -2,6 +2,9 @@
 	background: $l-grey;
 	padding: 60px 0 100px;
 	position: relative;
+	.slider{
+		width: 100%;
+	}
 	.container{
 		padding: 0;
 	}
@@ -10,13 +13,14 @@
 	}
 	.hit:before{
 		color: #fff;
-		background: url(../img/hit.png) no-repeat;
+		background-position: 0 0;
 		width: 61px;
 		height: 61px;
 		position: absolute;
 		content:"";
 		top: 0;
 		left: -2px;
+		background-size: 61px;
 	}
 }
 .ico__ok:before, .ico__no:before{
@@ -26,25 +30,28 @@
 	height: 30px;
 	top: 20px;
 	right: 20px;
+	background: no-repeat;
 }
 .ico__ok:before{
-	background: url(../img/yes.svg) no-repeat;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2015.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.0//EN%22%20%22http%3A//www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%0A%3Csvg%20version%3D%221.0%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2230.375px%22%20height%3D%2221.688px%22%20viewBox%3D%220%200%2030.375%2021.688%22%20enable-background%3D%22new%200%200%2030.375%2021.688%22%20xml%3Aspace%3D%22preserve%22%20fill%3D%22%233dc644%22%3E%0A%3Cpath%20d%3D%22M29.936%2C0.439c-0.586-0.586-1.535-0.586-2.121%2C0L10.188%2C18.066l-7.627-7.627c-0.586-0.586-1.535-0.586-2.121%2C0%0A%09s-0.586%2C1.535%2C0%2C2.121l8.688%2C8.688c0.293%2C0.293%2C0.677%2C0.439%2C1.061%2C0.439s0.768-0.146%2C1.061-0.439L29.936%2C2.561%0A%09C30.521%2C1.975%2C30.521%2C1.025%2C29.936%2C0.439z%22/%3E%0A%3C/svg%3E%0A");
 
 }
 .ico__no:before{
-	background: url(../img/no.svg) no-repeat;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2015.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.0//EN%22%20%22http%3A//www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%0A%3Csvg%20version%3D%221.0%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2226.752px%22%20height%3D%2226.752px%22%20viewBox%3D%220%200%2026.752%2026.752%22%20enable-background%3D%22new%200%200%2026.752%2026.752%22%20xml%3Aspace%3D%22preserve%22%20fill%3D%22%23f25b26%22%3E%0A%3Cpath%20d%3D%22M15.497%2C13.376L26.312%2C2.562c0.586-0.585%2C0.586-1.535%2C0-2.121s-1.535-0.586-2.121%2C0L13.376%2C11.255L2.562%2C0.439%0A%09c-0.586-0.586-1.535-0.586-2.121%2C0c-0.586%2C0.585-0.586%2C1.535%2C0%2C2.121l10.814%2C10.815L0.439%2C24.19c-0.586%2C0.586-0.586%2C1.535%2C0%2C2.121%0A%09c0.293%2C0.293%2C0.677%2C0.439%2C1.061%2C0.439s0.768-0.146%2C1.061-0.439l10.815-10.814L24.19%2C26.312c0.293%2C0.293%2C0.677%2C0.439%2C1.061%2C0.439%0A%09s0.768-0.146%2C1.061-0.439c0.586-0.586%2C0.586-1.535%2C0-2.121L15.497%2C13.376z%22/%3E%0A%3C/svg%3E%0A");
+
 }
+
 .price__table-container{
 	margin: 0 auto;
 	position: relative;
-
 	overflow: hidden;
+	min-height: 330px;
 }
 .price__table  {
 
 	position: absolute;
   left: 50%;
-  width: 300%;
+  width: 280%;
   min-height: 300px;
   text-transform: uppercase;
   text-align: left;
@@ -110,6 +117,7 @@
 		position: static;
 		width: $medium-screen;
 		transform: none;
+		margin: auto;
 
 		td  {
 			width: 150px;

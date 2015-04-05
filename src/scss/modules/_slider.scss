@@ -2,6 +2,7 @@
 	overflow: hidden;
 	position: relative;
 	padding-bottom:40px;
+	margin: auto;
 }
 
 .slider__container {
@@ -12,8 +13,11 @@
 .slider__item  {
 	float: left;
 	width: $small-screen;
+	display: none;
 }
-
+.slider__item--active{
+	display: block;
+}
 .slider__navigation  {
 	font-size: 0;
 	text-align: center;
@@ -80,16 +84,16 @@
 	}
 	.controls__item--left{
 		left: 0;
-		background: url(../img/left-arrow.png) no-repeat;
+		background-position: 0 -62px;
 		&:hover{
-			background: url(../img/left-arrow--hover.png) no-repeat;
+			background-position: 0 -104px;
 		}
 	}
 	.controls__item--right{
 		right: 0;
-		background: url(../img/right-arrow.png) no-repeat;
+		background-position: 0 -146px;
 		&:hover{
-			background: url(../img/right-arrow--hover.png) no-repeat;
+			background-position: 0 -188px;
 		}
 
 	}

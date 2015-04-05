@@ -10,3 +10,4 @@ build
 *.psd
 .htaccess
 .idea
+.sass-cache

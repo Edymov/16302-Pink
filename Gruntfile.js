@@ -65,7 +65,7 @@ module.exports = function(grunt) {
 			},
 
 			options:{
-				sourcemap: none
+				sourcemap: "none"
 			}
 
 		},
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
 				browsers: ["last 2 versions", "ie 10"]
 			},
 			style: {
-				src: "src/css/style.css"
+				src: "build/css/style.css"
 			}
 		},
 
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			style: {
 				options:{
-					keepSpecialComments: none,
+					keepSpecialComments: "none",
 					report: "gzip"
 				},
 				files: {
@@ -100,21 +100,43 @@ module.exports = function(grunt) {
 		},
 
 		imagemin: {
-			images:{
+
+			static: {
 				options:{
 					optimizationLevel: 3
-				},
-				files:{
-					expand: true,
-					src: ["build/img/**/*.{png,gif,svg,jpg}"]
 				}
+			},
+
+			dynamic: {
+
+				files: [{
+					expand: true,
+					src: ["build/img/**/*.{png,gif,jpg}"]
+				}]
+
+			}
+
+		},
+		svgmin: {
+			options: {
+					plugins: [
+					{ removeViewBox: false },
+					{ removeUselessStrokeAndFill: false }
+					]
+			},
+			dist: {
+					files: [{
+							expand: true, cwd: "build/img/", src: ["*.svg"], dest: "build/img/"
+					}]
+
 			}
 		}
-
 	});
 
 
 	grunt.registerTask("lint", ["lintspaces"]);
+	grunt.registerTask("svg-sprite", ["grunticon"]);
+
 	grunt.registerTask("default", [
 		"clean",
 		"copy",
@@ -123,7 +145,8 @@ module.exports = function(grunt) {
 		"autoprefixer",
 		"cmq",
 		"cssmin",
-		"imagemin"
+		"imagemin",
+		"svgmin"
 	]);
 
 };
